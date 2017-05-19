@@ -1,5 +1,4 @@
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\TripLog.dll
-E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\TripLog.pdb
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\Xamarin.Forms.Core.dll
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\Xamarin.Forms.Maps.dll
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\Xamarin.Forms.Platform.dll
@@ -10,10 +9,11 @@ E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\b
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\Xamarin.Forms.Platform.pdb
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\Xamarin.Forms.Xaml.pdb
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\Xamarin.Forms.Xaml.xml
-E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.csprojResolveAssemblyReference.cache
-E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.MainPage.xaml.g.cs
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.Views.MainPage.xaml.g.cs
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.App.xaml.g.cs
-E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.NewEntryPage.xaml.g.cs
-E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.DetailPage.xaml.g.cs
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.Views.NewEntryPage.xaml.g.cs
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.Views.DetailPage.xaml.g.cs
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.dll
 E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.pdb
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\bin\Debug\TripLog.pdb
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\TripLog\TripLog\TripLog\obj\Debug\TripLog.csprojResolveAssemblyReference.cache
