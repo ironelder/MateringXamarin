@@ -18,7 +18,7 @@ namespace TripLog
         {
             get { return BindingContext as DetailViewModel; }
         }
-        public DetailPage(TripLogEntry entry)
+        public DetailPage()
         {
             InitializeComponent();
             Title = "Entry Details";

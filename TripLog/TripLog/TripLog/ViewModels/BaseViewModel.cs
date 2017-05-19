@@ -13,7 +13,7 @@ namespace TripLog.ViewModels
         protected BaseViewModel()
         {
         }
-
+        public abstract Task Init();
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -25,4 +25,16 @@ namespace TripLog.ViewModels
             }
         }
     }
+    public abstract class BaseViewModel<TParameter> : BaseViewModel
+    {
+        protected BaseViewModel():base()
+        {
+        }
+        public override async Task Init()
+        {
+            await Init(default(TParameter));
+        }
+        public abstract Task Init(TParameter parameter);
+    }
+
 }
