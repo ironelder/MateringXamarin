@@ -9,7 +9,7 @@ using TripLog.Services;
 using TripLog.ViewModels;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(XamarinFormsNavService))]
+//[assembly: Dependency(typeof(XamarinFormsNavService))]
 namespace TripLog.Services
 {
     public class XamarinFormsNavService:INavService
@@ -64,8 +64,12 @@ namespace TripLog.Services
                 throw new ArgumentException("No view found in View Mapping for " + viewModelType.FullName + ".");
                 var constructor = viewType.GetTypeInfo().DeclaredConstructors.FirstOrDefault(dc => dc.GetParameters().Count() <= 0);
                 var view = constructor.Invoke(null) as Page;
+
+                var vm = ((App)Application.Current).Kernel.GetService(viewModelType);
+                view.BindingContext = vm;
                 await XamarinFormsNav.PushAsync(view, true);
             }
+
         }
 
         public async Task RemoveLastView()

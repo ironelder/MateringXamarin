@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TripLog.Models;
+using TripLog.Services;
 
 namespace TripLog.ViewModels
 {
@@ -24,7 +25,11 @@ namespace TripLog.ViewModels
         //    Entry = entry;
         //}
 
-        public DetailViewModel()
+        //public DetailViewModel()
+        //{
+        //}
+
+        public DetailViewModel(INavService navService) : base(navService)
         {
         }
 

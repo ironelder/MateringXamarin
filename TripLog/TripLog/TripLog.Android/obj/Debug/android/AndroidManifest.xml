@@ -9,7 +9,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-  <application android:label="TripLog.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="TripLog.Android" android:name="md57e18cddce524727f240480d9634723d8.MainApplication" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA5BNkuqrPuNPlAw4aMjIUeJgTc4c0UHT8" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="TripLog" android:theme="@style/MainTheme" android:name="md57e18cddce524727f240480d9634723d8.MainActivity">

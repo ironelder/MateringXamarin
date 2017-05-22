@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TripLog.Models;
+using TripLog.Services;
+using Xamarin.Forms;
 
 namespace TripLog.ViewModels
 {
@@ -20,7 +22,7 @@ namespace TripLog.ViewModels
                 OnPropertyChanged();
             }
         }
-        public MainViewModel() : base()
+        public MainViewModel(INavService navService) : base(navService)
         {
             LogEntries = new ObservableCollection<TripLogEntry>();
             //LogEntries.Add(new TripLogEntry
@@ -90,5 +92,28 @@ namespace TripLog.ViewModels
                 });
             });
         }
+
+        Command<TripLogEntry> _viewCommand;
+        public Command<TripLogEntry> ViewCommand
+        {
+            get { return _viewCommand ?? ( _viewCommand = new Command<TripLogEntry>(async (entry) => await ExecuteViewCommand(entry))); } 
+        }
+
+        Command _newCommand;
+        public Command NewCommand
+        {
+            get { return _newCommand ?? (_newCommand = new Command(async () => await ExecuteNewCommand()));  }
+        }
+
+        async Task ExecuteViewCommand(TripLogEntry entry)
+        {
+            await NavService.NavigateTo<DetailViewModel, TripLogEntry>(entry);
+        }
+
+        async Task ExecuteNewCommand()
+        {
+            await NavService.NavigateTo<NewEntryViewModel>();
+        }
+
     }
 }

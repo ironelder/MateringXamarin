@@ -99,7 +99,18 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "TripLog.Android.dll" comes first in this list. */
 		"TripLog.Android.dll",
+		"CrossPlatformLibrary.dll",
+		"CrossPlatformLibrary.Platform.dll",
 		"FormsViewGroup.dll",
+		"Guards.dll",
+		"Microsoft.Practices.ServiceLocation.dll",
+		"Ninject.dll",
+		"PlatformAdapter.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Geolocator.Abstractions.dll",
+		"Plugin.Geolocator.dll",
+		"Plugin.Permissions.Abstractions.dll",
+		"Plugin.Permissions.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

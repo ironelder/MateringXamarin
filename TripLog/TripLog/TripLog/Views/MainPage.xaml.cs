@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TripLog.Models;
+using TripLog.Services;
 using TripLog.ViewModels;
 using Xamarin.Forms;
 
@@ -12,11 +13,15 @@ namespace TripLog
 {
     public partial class MainPage : ContentPage
     {
+        MainViewModel _vm
+        {
+            get { return BindingContext as MainViewModel; }
+        }
         public MainPage()
         {
             InitializeComponent();
             Title = "TripLog";
-            BindingContext = new MainViewModel();
+            //BindingContext = new MainViewModel(DependencyService.Get<INavService>());
             //var items = new List<TripLogEntry>
             //{
             //    new TripLogEntry
@@ -62,19 +67,33 @@ namespace TripLog
             {
                 Text = "New"
             };
-            newButton.Clicked += (sender, e) =>
-            {
-                Navigation.PushAsync(new NewEntryPage());
-            };
-            ToolbarItems.Add(newButton);
+            //newButton.Clicked += (sender, e) =>
+            //{
+            //    Navigation.PushAsync(new NewEntryPage());
+            //};
+            //ToolbarItems.Add(newButton);
+            newButton.SetBinding(ToolbarItem.CommandProperty, "NewCommand");
 
+#pragma warning disable CS1998 // 이 비동기 메서드에는 'await' 연산자가 없으며 메서드가 동시에 실행됩니다.
             entries.ItemTapped += async (sender, e) =>
             {
                 var item = (TripLogEntry)e.Item;
-                await Navigation.PushAsync(new DetailPage(item));
+                //await Navigation.PushAsync(new DetailPage(item));
+                _vm.ViewCommand.Execute(item);
             };
+#pragma warning restore CS1998 // 이 비동기 메서드에는 'await' 연산자가 없으며 메서드가 동시에 실행됩니다.
 
             Content = entries;
+
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            if (_vm != null)
+            {
+                await _vm.Init();
+            }
         }
     }
 }

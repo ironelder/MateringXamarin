@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TripLog.Models;
+using TripLog.Services;
 using Xamarin.Forms;
 
 namespace TripLog.ViewModels
 {
     public class NewEntryViewModel:BaseViewModel
     {
+        readonly ILocationService _locService;
         string _title;
         Command _saveCommand;
 
@@ -105,10 +107,39 @@ namespace TripLog.ViewModels
             return !string.IsNullOrWhiteSpace(Title);
         }
 
-        public NewEntryViewModel()
+        //public NewEntryViewModel()
+        //{
+        //    Date = DateTime.Today;
+        //    Rating = 1;
+        //}
+        public NewEntryViewModel(INavService navService, ILocationService locService) : base(navService)
         {
+            _locService = locService;
             Date = DateTime.Today;
             Rating = 1;
+        }
+
+
+        async Task ExecuteSaveCommand()
+        {
+            var newItem = new TripLogEntry
+            {
+                Title = this.Title,
+                Latitude = this.Latitude,
+                Longitude = this.Longitude,
+                Date = this.Date,
+                Rating = this.Rating,
+                Notes = this.Notes
+            };
+
+            await NavService.GoBack();
+        }
+
+        public override async Task Init()
+        {
+            var coords = await _locService.GetGeoCoordinatesAsync();
+            Latitude = coords.Latitude;
+            Longitude = coords.Longitude;
         }
     }
 }

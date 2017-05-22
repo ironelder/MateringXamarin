@@ -5,14 +5,18 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using TripLog.Services;
 
 namespace TripLog.ViewModels
 {
     public abstract class BaseViewModel:INotifyPropertyChanged
     {
-        protected BaseViewModel()
+        protected INavService NavService { get; private set; }
+        protected BaseViewModel(INavService navService)
         {
+            NavService = navService;
         }
+
         public abstract Task Init();
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -27,9 +31,11 @@ namespace TripLog.ViewModels
     }
     public abstract class BaseViewModel<TParameter> : BaseViewModel
     {
-        protected BaseViewModel():base()
+        protected BaseViewModel(INavService navService) :base(navService)
         {
         }
+
+
         public override async Task Init()
         {
             await Init(default(TParameter));
