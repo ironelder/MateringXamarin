@@ -1,0 +1,15 @@
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\XamarinForms.dll
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\XamarinForms.pdb
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Core.dll
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Platform.dll
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Xaml.dll
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Core.pdb
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Core.xml
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Platform.pdb
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Xaml.pdb
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\obj\Debug\XamarinForms.csprojResolveAssemblyReference.cache
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\obj\Debug\XamarinForms.MainPage.xaml.g.cs
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\obj\Debug\XamarinForms.App.xaml.g.cs
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\obj\Debug\XamarinForms.dll
+E:\Project\Private\Xamarin\GitXamarin\MasteringXamarin\XamarinForms\XamarinForms\XamarinForms\obj\Debug\XamarinForms.pdb
